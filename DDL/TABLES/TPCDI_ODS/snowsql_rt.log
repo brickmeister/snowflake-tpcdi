@@ -1,0 +1,346 @@
+2023-03-19 23:41:08,134 (83956/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-19 23:41:08,135 (83956/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILHIrqr/certifi/cacert.pem
+2023-03-19 23:41:08,136 (83956/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2023-03-19 23:41:08,136 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql/1.2.24/snowsql.cnf
+2023-03-19 23:41:08,137 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2023-03-19 23:41:08,137 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2023-03-19 23:41:08,137 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2023-03-19 23:41:08,137 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql.cnf
+2023-03-19 23:41:08,137 (83956/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql/config
+2023-03-19 23:41:08,138 (83956/MainThread) __main__ DEBUG      eventloop:355  - {'database': None, 'dbname': 'TPCDI_STG', 'warehouse': None, 'warehousename': 'SNOWPIPE', 'user': None, 'username': 'FPATANO420', 'account': None, 'accountname': 'fi29557', 'host': None, 'port': None, 'region': 'east-us-2.azure', 'schema': None, 'schemaname': 'RAW', 'role': None, 'rolename': None, 'proxy_host': None, 'proxy_port': None, 'proxy_user': None, 'authenticator': None, 'mfa_passcode': None, 'session_parameters': None, 'ocsp_fail_open': None, 'insecure_mode': None, 'protocol': None, 'probe_connection': None, 'private_key_path': None, 'login_timeout': None, 'client_session_keep_alive': None, 'disable_request_pooling': None, 'token': None, 'client_store_temporary_credential': None}
+2023-03-19 23:41:08,138 (83956/MainThread) __main__ DEBUG      eventloop:362  - [None, 'TPCDI_STG', None, 'SNOWPIPE', None, 'FPATANO420', None, 'fi29557', None, None, 'east-us-2.azure', None, 'RAW', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2023-03-19 23:41:08,139 (83956/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2023-03-19 23:41:08,139 (83956/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2023-03-19 23:41:08,139 (83956/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2023-03-19 23:41:08,139 (83956/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2023-03-19 23:41:08,139 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: tpcdi_stg, warehouse: snowpipe, user: FPATANO420, host: fi29557.east-us-2.azure.snowflakecomputing.com, port: 443, region: east-us-2.azure, account: fi29557, protocol: https, schema: RAW, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2023-03-19 23:41:08,139 (83956/MainThread) snowflake.connector.connection INFO     connection:275  - Snowflake Connector for Python Version: 2.8.0, Python Version: 3.8.1, Platform: macOS-10.16-x86_64-i386-64bit
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.connection DEBUG     connection:520  - connect
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.connection DEBUG     connection:810  - __config
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.connection INFO     connection:934  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.connection INFO     connection:952  - Setting use_openssl_only mode to False
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2023-03-19 23:41:08,140 (83956/MainThread) snowflake.connector.connection DEBUG     connection:713  - REST API object was created: fi29557.east-us-2.azure.snowflakecomputing.com:443
+2023-03-19 23:41:08,141 (83956/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2023-03-19 23:41:08,141 (83956/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2023-03-19 23:41:08,141 (83956/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=fi29557, user=FPATANO420, database=tpcdi_stg, schema=RAW, warehouse=snowpipe, role=None, request_id=2dbcece2-32af-4dd0-90c1-0908740d4066
+2023-03-19 23:41:08,141 (83956/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.24', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'fi29557', 'LOGIN_NAME': 'FPATANO420', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Darwin', 'OS_VERSION': 'macOS-10.16-x86_64-i386-64bit', 'PYTHON_VERSION': '3.8.1', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'Clang 6.0 (clang-600.0.57)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2023-03-19 23:41:08,141 (83956/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: e2f0d58e-4b2d-4cf3-89cc-38022a932d21
+2023-03-19 23:41:08,142 (83956/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:41:08,150 (83956/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): fi29557.east-us-2.azure.snowflakecomputing.com:443
+2023-03-19 23:41:08,368 (83956/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:41:08,369 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:515  - cache directory: /Users/franco.patano/Library/Caches/Snowflake
+2023-03-19 23:41:08,438 (83956/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:80   - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2023-03-19 23:41:08,438 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - ocsp_response_cache_uri: file:///Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json
+2023-03-19 23:41:08,438 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:558  - OCSP_VALIDATION_CACHE size: 0
+2023-03-19 23:41:08,438 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:340  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2023-03-19 23:41:08,438 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:376  - OCSP dynamic cache server RETRY URL: None
+2023-03-19 23:41:08,440 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:41:08,441 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:45:34+00:00
+2023-03-19 23:41:08,443 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-04-15 00:00:00+00:00
+2023-03-19 23:41:08,444 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2023-03-19 23:41:08,445 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2023-03-19 23:41:08,450 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:41:08,451 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:41:08,454 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-22 07:00:00+00:00
+2023-03-19 23:41:08,455 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,456 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,457 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,458 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,459 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,460 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,461 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,462 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,462 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,463 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,464 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,465 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,466 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,467 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,468 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,468 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,469 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,470 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,471 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,472 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,473 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:41:08,475 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:41:08,483 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-03-22 15:50:16+00:00
+2023-03-19 23:41:08,492 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-03-24 15:50:23+00:00
+2023-03-19 23:41:08,492 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:593  - Read OCSP response cache file: /Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json, count=207
+2023-03-19 23:41:08,492 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1126 - validating certificate: fi29557.east-us-2.azure.snowflakecomputing.com
+2023-03-19 23:41:08,492 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:439  - # of certificates: 2
+2023-03-19 23:41:08,493 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:444  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:41:08,493 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:444  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2023-03-19 23:41:08,494 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:123  - reading certificate bundle: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILHIrqr/certifi/cacert.pem
+2023-03-19 23:41:08,504 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:465  - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2023-03-19 23:41:08,505 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')])
+2023-03-19 23:41:08,506 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:41:08,507 (83956/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:41:08,508 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')])
+2023-03-19 23:41:08,509 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1310 - using OCSP response cache
+2023-03-19 23:41:08,509 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:333  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2023-03-19 23:41:08,509 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:341  - Verifying the OCSP response is signed by the issuer.
+2023-03-19 23:41:08,539 (83956/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:41:08,540 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:41:08,541 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1310 - using OCSP response cache
+2023-03-19 23:41:08,542 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:333  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2023-03-19 23:41:08,542 (83956/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:341  - Verifying the OCSP response is signed by the issuer.
+2023-03-19 23:41:08,544 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:655  - writing OCSP response cache file to /Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json
+2023-03-19 23:41:08,544 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1802 - encoding OCSP response cache to JSON
+2023-03-19 23:41:08,561 (83956/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1183 - ok
+2023-03-19 23:41:08,875 (83956/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=2dbcece2-32af-4dd0-90c1-0908740d4066&databaseName=tpcdi_stg&schemaName=RAW&warehouse=snowpipe&request_guid=e2f0d58e-4b2d-4cf3-89cc-38022a932d21 HTTP/1.1" 200 None
+2023-03-19 23:41:08,878 (83956/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:41:08,879 (83956/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:41:08,880 (83956/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:41:08,880 (83956/MainThread) snowflake.connector.auth DEBUG           auth:373  - completed authentication
+2023-03-19 23:41:08,880 (83956/MainThread) snowflake.connector.auth DEBUG           auth:416  - token = ******
+2023-03-19 23:41:08,880 (83956/MainThread) snowflake.connector.auth DEBUG           auth:419  - master_token = ******
+2023-03-19 23:41:08,881 (83956/MainThread) snowflake.connector.auth DEBUG           auth:423  - id_token = NULL
+2023-03-19 23:41:08,881 (83956/MainThread) snowflake.connector.auth DEBUG           auth:427  - mfa_token = NULL
+2023-03-19 23:41:08,883 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:322  - adding connection: 0
+2023-03-19 23:41:08,883 (83956/MainThread) __main__ DEBUG      eventloop:676  - Read from a file
+2023-03-19 23:41:08,884 (83956/MainThread) __main__ DEBUG      eventloop:679  - Files are added to list ('*.sql',)
+2023-03-19 23:41:08,885 (83956/MainThread) __main__ INFO      eventloop:577  - rollback
+2023-03-19 23:41:08,885 (83956/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2023-03-19 23:41:08,885 (83956/MainThread) snowflake.connector.connection DEBUG     connection:632  - cursor
+2023-03-19 23:41:08,885 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:629  - executing SQL/command
+2023-03-19 23:41:08,886 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:668  - binding: [ROLLBACK] with input=[None], processed=[{}]
+2023-03-19 23:41:08,886 (83956/MainThread) snowflake.connector.cursor INFO         cursor:714  - query: [ROLLBACK]
+2023-03-19 23:41:08,886 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:440  - Cannot use arrow result format, fallback to json format
+2023-03-19 23:41:08,887 (83956/MainThread) snowflake.connector.connection DEBUG     connection:1310 - sequence counter: 1
+2023-03-19 23:41:08,887 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:459  - Request id: 216dcc4c-7a19-4a9e-9008-25a13705e897
+2023-03-19 23:41:08,887 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:461  - running query [ROLLBACK]
+2023-03-19 23:41:08,888 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:470  - is_file_transfer: False
+2023-03-19 23:41:08,888 (83956/MainThread) snowflake.connector.connection DEBUG     connection:980  - _cmd_query
+2023-03-19 23:41:08,888 (83956/MainThread) snowflake.connector.connection DEBUG     connection:1003 - sql=[ROLLBACK], sequence_id=[1], is_file_transfer=[False]
+2023-03-19 23:41:08,889 (83956/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:41:08,889 (83956/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: None, retry cnt: 1
+2023-03-19 23:41:08,889 (83956/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 9853289e-541e-4ff6-94a5-f68da543f948
+2023-03-19 23:41:08,889 (83956/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:41:08,999 (83956/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=216dcc4c-7a19-4a9e-9008-25a13705e897&request_guid=9853289e-541e-4ff6-94a5-f68da543f948 HTTP/1.1" 200 None
+2023-03-19 23:41:09,003 (83956/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:41:09,004 (83956/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:41:09,005 (83956/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:41:09,005 (83956/MainThread) snowflake.connector.network DEBUG        network:739  - Query id: 01ab0f6d-0d04-4ee4-0000-00030e7658e1
+2023-03-19 23:41:09,006 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:736  - sfqid: 01ab0f6d-0d04-4ee4-0000-00030e7658e1
+2023-03-19 23:41:09,007 (83956/MainThread) snowflake.connector.cursor INFO         cursor:738  - query execution done
+2023-03-19 23:41:09,007 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:740  - SUCCESS
+2023-03-19 23:41:09,008 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:743  - PUT OR GET: None
+2023-03-19 23:41:09,008 (83956/MainThread) snowflake.connector.cursor DEBUG         cursor:840  - Query result format: json
+2023-03-19 23:41:09,009 (83956/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:89   - Type: TEXT, Format: None
+2023-03-19 23:41:09,009 (83956/MainThread) snowflake.connector.result_batch DEBUG   result_batch:440  - parsing for result batch id: 1
+2023-03-19 23:41:09,010 (83956/MainThread) snowflake.connector.cursor INFO         cursor:854  - Number of results in first chunk: 1
+2023-03-19 23:41:09,010 (83956/MainThread) __main__ ERROR      eventloop:1255 - [Errno 2] No such file or directory: '*.sql'
+Traceback (most recent call last):
+  File "eventloop.py", line 1202, in cli
+  File "eventloop.py", line 1195, in cli
+  File "eventloop.py", line 680, in run_cli
+  File "eventloop.py", line 170, in __init__
+  File "codecs.py", line 905, in open
+FileNotFoundError: [Errno 2] No such file or directory: '*.sql'
+2023-03-19 23:41:09,013 (83956/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2023-03-19 23:41:09,013 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2023-03-19 23:41:09,014 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2023-03-19 23:41:09,014 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2023-03-19 23:41:09,014 (83956/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2023-03-19 23:41:09,015 (83956/MainThread) snowflake.connector.connection INFO     connection:565  - closed
+2023-03-19 23:41:09,015 (83956/MainThread) snowflake.connector.telemetry DEBUG      telemetry:209  - Closing telemetry client.
+2023-03-19 23:41:09,016 (83956/MainThread) snowflake.connector.telemetry DEBUG      telemetry:174  - Sending 1 logs to telemetry. Data is {'logs': [{'message': {'driver_type': 'PythonConnector', 'driver_version': '2.8.0', 'source': 'SnowSQL', 'type': 'client_imported_packages', 'value': "{'oscrypto', 'functools', 'tokenize', 'array', 'requests', 'stat', 'reprlib', 'jwt', 'termios', 'pytz', 'struct', 'enum', 'sre_constants', 'urllib3', 'sysconfig', 'plistlib', 'tempfile', 'builtins', 'dis', 'datetime', 'configobj', 'cryptography', 'glob', 'filelock', 'string', 'fcntl', 'dataclasses', 'encodings', 'numbers', 'prompt_toolkit', 'colorama', 'pyimod01_os_path', 'marshal', 'asn1crypto', 'html', 'getpass', 'hashlib', 'keyword', 'signal', 'pyimod02_archive', 'keyrings', 'xml', 'opcode', 'zipfile', 'shlex', 'ssl', 'platform', 'pickle', 'token', 'charset_normalizer', 'os', 'calendar', 'pycparser', 'locale', 'errno', 'socket', 'click', 'grp', 'fractions', 'contextlib', 'abc', 'binascii', 'queue', 'math', 'sre_parse', 'pathlib', 'email', 'bz2', 'pygments', 'collections', 'uu', 'hmac', 'configparser', 'gzip', 'fnmatch', 'warnings', 'inspect', 'webbrowser', 'decimal', 'logging', 'typing', 'cffi', 'wcwidth', 'copyreg', 'sys', 'selectors', 'ctypes', 'types', 'urllib', 'certifi', 'ipaddress', 'shutil', 'linecache', 'six', 'difflib', 'ast', 'zlib', 'subprocess', 'pyimod04_ctypes', 'posix', 'pyexpat', 'uuid', 'pwd', 'keyring', 'pkg_resources', 're', 'random', 'sqlparse', 'operator', 'select', 'json', 'pprint', 'genericpath', 'multiprocessing', 'threading', 'base64', 'heapq', 'textwrap', 'zipimport', 'http', 'importlib', 'pkgutil', 'io', 'jaraco', 'weakref', 'pyimod03_importers', 'itertools', 'ntpath', 'traceback', 'codecs', 'OpenSSL', 'entrypoints', 'idna', 'lzma', 'Cryptodome', 'concurrent', 'posixpath', 'gettext', 'snowflake', 'mimetypes', 'stringprep', 'csv', 'unicodedata', 'quopri', 'atexit', 'copy', 'sre_compile', 'time', 'typing_extensions', 'bisect', 'tty', 'runpy', 'argparse'}"}, 'timestamp': '1679269268882'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '2.8.0', 'source': 'SnowSQL', 'type': 'client_time_consume_first_result', 'query_id': '01ab0f6d-0d04-4ee4-0000-00030e7658e1', 'value': -78}, 'timestamp': '1679269269006'}]}.
+2023-03-19 23:41:09,019 (83956/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:41:09,019 (83956/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 5, retry cnt: 1
+2023-03-19 23:41:09,019 (83956/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 78d3116c-5d47-455a-abf8-1e334cf21d03
+2023-03-19 23:41:09,020 (83956/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:41:09,069 (83956/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=78d3116c-5d47-455a-abf8-1e334cf21d03 HTTP/1.1" 200 86
+2023-03-19 23:41:09,070 (83956/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:41:09,070 (83956/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:41:09,070 (83956/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:41:09,070 (83956/MainThread) snowflake.connector.telemetry DEBUG      telemetry:198  - Successfully uploading metrics to telemetry.
+2023-03-19 23:41:09,071 (83956/MainThread) snowflake.connector.connection INFO     connection:568  - No async queries seem to be running, deleting session
+2023-03-19 23:41:09,071 (83956/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:41:09,071 (83956/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 5, retry cnt: 1
+2023-03-19 23:41:09,072 (83956/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: fa592c2a-baa9-46b7-a85e-d51ea39e6e0a
+2023-03-19 23:41:09,072 (83956/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:41:09,163 (83956/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=fa592c2a-baa9-46b7-a85e-d51ea39e6e0a HTTP/1.1" 200 76
+2023-03-19 23:41:09,167 (83956/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:41:09,167 (83956/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:41:09,168 (83956/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:41:09,171 (83956/MainThread) snowflake.connector.connection DEBUG     connection:579  - Session is closed
+2023-03-19 23:44:00,875 (85173/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-19 23:44:00,876 (85173/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEID4rTF6/certifi/cacert.pem
+2023-03-19 23:44:00,876 (85173/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2023-03-19 23:44:00,877 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql/1.2.24/snowsql.cnf
+2023-03-19 23:44:00,877 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2023-03-19 23:44:00,878 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2023-03-19 23:44:00,878 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2023-03-19 23:44:00,878 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql.cnf
+2023-03-19 23:44:00,878 (85173/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /Users/franco.patano/.snowsql/config
+2023-03-19 23:44:00,879 (85173/MainThread) __main__ DEBUG      eventloop:355  - {'database': None, 'dbname': 'TPCDI_STG', 'warehouse': None, 'warehousename': 'SNOWPIPE', 'user': None, 'username': 'FPATANO420', 'account': None, 'accountname': 'fi29557', 'host': None, 'port': None, 'region': 'east-us-2.azure', 'schema': None, 'schemaname': 'RAW', 'role': None, 'rolename': None, 'proxy_host': None, 'proxy_port': None, 'proxy_user': None, 'authenticator': None, 'mfa_passcode': None, 'session_parameters': None, 'ocsp_fail_open': None, 'insecure_mode': None, 'protocol': None, 'probe_connection': None, 'private_key_path': None, 'login_timeout': None, 'client_session_keep_alive': None, 'disable_request_pooling': None, 'token': None, 'client_store_temporary_credential': None}
+2023-03-19 23:44:00,879 (85173/MainThread) __main__ DEBUG      eventloop:362  - [None, 'TPCDI_STG', None, 'SNOWPIPE', None, 'FPATANO420', None, 'fi29557', None, None, 'east-us-2.azure', None, 'RAW', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2023-03-19 23:44:00,879 (85173/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2023-03-19 23:44:00,879 (85173/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2023-03-19 23:44:00,880 (85173/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2023-03-19 23:44:00,880 (85173/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2023-03-19 23:44:00,880 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: tpcdi_stg, warehouse: snowpipe, user: FPATANO420, host: fi29557.east-us-2.azure.snowflakecomputing.com, port: 443, region: east-us-2.azure, account: fi29557, protocol: https, schema: RAW, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2023-03-19 23:44:00,880 (85173/MainThread) snowflake.connector.connection INFO     connection:275  - Snowflake Connector for Python Version: 2.8.0, Python Version: 3.8.1, Platform: macOS-10.16-x86_64-i386-64bit
+2023-03-19 23:44:00,880 (85173/MainThread) snowflake.connector.connection DEBUG     connection:520  - connect
+2023-03-19 23:44:00,880 (85173/MainThread) snowflake.connector.connection DEBUG     connection:810  - __config
+2023-03-19 23:44:00,881 (85173/MainThread) snowflake.connector.connection INFO     connection:934  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2023-03-19 23:44:00,881 (85173/MainThread) snowflake.connector.connection INFO     connection:952  - Setting use_openssl_only mode to False
+2023-03-19 23:44:00,881 (85173/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2023-03-19 23:44:00,881 (85173/MainThread) snowflake.connector.connection DEBUG     connection:713  - REST API object was created: fi29557.east-us-2.azure.snowflakecomputing.com:443
+2023-03-19 23:44:00,881 (85173/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2023-03-19 23:44:00,882 (85173/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2023-03-19 23:44:00,882 (85173/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=fi29557, user=FPATANO420, database=tpcdi_stg, schema=RAW, warehouse=snowpipe, role=None, request_id=cc47900f-fa07-46f6-b036-4d6992f15824
+2023-03-19 23:44:00,882 (85173/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.24', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'fi29557', 'LOGIN_NAME': 'FPATANO420', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Darwin', 'OS_VERSION': 'macOS-10.16-x86_64-i386-64bit', 'PYTHON_VERSION': '3.8.1', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'Clang 6.0 (clang-600.0.57)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2023-03-19 23:44:00,882 (85173/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2023-03-19 23:44:00,882 (85173/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2023-03-19 23:44:00,883 (85173/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2023-03-19 23:44:00,883 (85173/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:44:00,883 (85173/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2023-03-19 23:44:00,883 (85173/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 3dc4e4ae-3b45-4a35-9633-8ca8acc5f353
+2023-03-19 23:44:00,883 (85173/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:44:00,928 (85173/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): fi29557.east-us-2.azure.snowflakecomputing.com:443
+2023-03-19 23:44:01,147 (85173/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:44:01,148 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:515  - cache directory: /Users/franco.patano/Library/Caches/Snowflake
+2023-03-19 23:44:01,218 (85173/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:80   - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2023-03-19 23:44:01,218 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - ocsp_response_cache_uri: file:///Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json
+2023-03-19 23:44:01,218 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:558  - OCSP_VALIDATION_CACHE size: 0
+2023-03-19 23:44:01,218 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:340  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2023-03-19 23:44:01,218 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:376  - OCSP dynamic cache server RETRY URL: None
+2023-03-19 23:44:01,221 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:44:01,222 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:45:34+00:00
+2023-03-19 23:44:01,223 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-04-15 00:00:00+00:00
+2023-03-19 23:44:01,224 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2023-03-19 23:44:01,225 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2023-03-19 23:44:01,231 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:44:01,232 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-09-15 19:41:06+00:00
+2023-03-19 23:44:01,235 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-22 07:00:00+00:00
+2023-03-19 23:44:01,236 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,237 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,238 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,239 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,240 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,240 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,241 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,242 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,243 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,244 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,245 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,246 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,247 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,247 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,248 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,249 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,250 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,251 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,252 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,253 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,253 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 23:13:30+00:00
+2023-03-19 23:44:01,256 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-01-12 20:33:17+00:00
+2023-03-19 23:44:01,264 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-03-22 15:50:16+00:00
+2023-03-19 23:44:01,273 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:238  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-03-24 15:50:23+00:00
+2023-03-19 23:44:01,273 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:593  - Read OCSP response cache file: /Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json, count=207
+2023-03-19 23:44:01,273 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1126 - validating certificate: fi29557.east-us-2.azure.snowflakecomputing.com
+2023-03-19 23:44:01,274 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:439  - # of certificates: 2
+2023-03-19 23:44:01,274 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:444  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:44:01,275 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:444  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2023-03-19 23:44:01,276 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:123  - reading certificate bundle: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEID4rTF6/certifi/cacert.pem
+2023-03-19 23:44:01,285 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:465  - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2023-03-19 23:44:01,286 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')])
+2023-03-19 23:44:01,287 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:44:01,288 (85173/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:44:01,289 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.east-us-2.azure.snowflakecomputing.com')])
+2023-03-19 23:44:01,290 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1310 - using OCSP response cache
+2023-03-19 23:44:01,290 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:333  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2023-03-19 23:44:01,291 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:341  - Verifying the OCSP response is signed by the issuer.
+2023-03-19 23:44:01,317 (85173/MainThread) snowflake.connector.cache DEBUG          cache:490  - acquiring /Users/franco.patano/Library/Caches/Snowflake/ocsp_cache.lock timed out, skipping saving...
+2023-03-19 23:44:01,319 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:733  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2023-03-19 23:44:01,319 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1310 - using OCSP response cache
+2023-03-19 23:44:01,320 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:333  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2023-03-19 23:44:01,320 (85173/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:341  - Verifying the OCSP response is signed by the issuer.
+2023-03-19 23:44:01,322 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:655  - writing OCSP response cache file to /Users/franco.patano/Library/Caches/Snowflake/ocsp_response_cache.json
+2023-03-19 23:44:01,322 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1802 - encoding OCSP response cache to JSON
+2023-03-19 23:44:01,339 (85173/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1183 - ok
+2023-03-19 23:44:01,685 (85173/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=cc47900f-fa07-46f6-b036-4d6992f15824&databaseName=tpcdi_stg&schemaName=RAW&warehouse=snowpipe&request_guid=3dc4e4ae-3b45-4a35-9633-8ca8acc5f353 HTTP/1.1" 200 None
+2023-03-19 23:44:01,689 (85173/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:44:01,690 (85173/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:44:01,690 (85173/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:44:01,690 (85173/MainThread) snowflake.connector.auth DEBUG           auth:373  - completed authentication
+2023-03-19 23:44:01,691 (85173/MainThread) snowflake.connector.auth DEBUG           auth:416  - token = ******
+2023-03-19 23:44:01,691 (85173/MainThread) snowflake.connector.auth DEBUG           auth:419  - master_token = ******
+2023-03-19 23:44:01,691 (85173/MainThread) snowflake.connector.auth DEBUG           auth:423  - id_token = NULL
+2023-03-19 23:44:01,692 (85173/MainThread) snowflake.connector.auth DEBUG           auth:427  - mfa_token = NULL
+2023-03-19 23:44:01,693 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:322  - adding connection: 0
+2023-03-19 23:44:01,694 (85173/MainThread) __main__ DEBUG      eventloop:676  - Read from a file
+2023-03-19 23:44:01,694 (85173/MainThread) __main__ DEBUG      eventloop:679  - Files are added to list ('*.sql',)
+2023-03-19 23:44:01,695 (85173/MainThread) __main__ INFO      eventloop:577  - rollback
+2023-03-19 23:44:01,695 (85173/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2023-03-19 23:44:01,695 (85173/MainThread) snowflake.connector.connection DEBUG     connection:632  - cursor
+2023-03-19 23:44:01,696 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:629  - executing SQL/command
+2023-03-19 23:44:01,696 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:668  - binding: [ROLLBACK] with input=[None], processed=[{}]
+2023-03-19 23:44:01,696 (85173/MainThread) snowflake.connector.cursor INFO         cursor:714  - query: [ROLLBACK]
+2023-03-19 23:44:01,696 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:440  - Cannot use arrow result format, fallback to json format
+2023-03-19 23:44:01,697 (85173/MainThread) snowflake.connector.connection DEBUG     connection:1310 - sequence counter: 1
+2023-03-19 23:44:01,697 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:459  - Request id: efe808d2-7411-47fe-b7bc-059dd824e690
+2023-03-19 23:44:01,697 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:461  - running query [ROLLBACK]
+2023-03-19 23:44:01,698 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:470  - is_file_transfer: False
+2023-03-19 23:44:01,698 (85173/MainThread) snowflake.connector.connection DEBUG     connection:980  - _cmd_query
+2023-03-19 23:44:01,698 (85173/MainThread) snowflake.connector.connection DEBUG     connection:1003 - sql=[ROLLBACK], sequence_id=[1], is_file_transfer=[False]
+2023-03-19 23:44:01,699 (85173/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:44:01,699 (85173/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: None, retry cnt: 1
+2023-03-19 23:44:01,699 (85173/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 1460dbcd-c460-4074-b439-8b429bc01b3d
+2023-03-19 23:44:01,700 (85173/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:44:01,836 (85173/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=efe808d2-7411-47fe-b7bc-059dd824e690&request_guid=1460dbcd-c460-4074-b439-8b429bc01b3d HTTP/1.1" 200 None
+2023-03-19 23:44:01,840 (85173/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:44:01,841 (85173/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:44:01,842 (85173/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:44:01,842 (85173/MainThread) snowflake.connector.network DEBUG        network:739  - Query id: 01ab0f70-0d04-4ee4-0000-00030e7658e5
+2023-03-19 23:44:01,842 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:736  - sfqid: 01ab0f70-0d04-4ee4-0000-00030e7658e5
+2023-03-19 23:44:01,843 (85173/MainThread) snowflake.connector.cursor INFO         cursor:738  - query execution done
+2023-03-19 23:44:01,843 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:740  - SUCCESS
+2023-03-19 23:44:01,843 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:743  - PUT OR GET: None
+2023-03-19 23:44:01,843 (85173/MainThread) snowflake.connector.cursor DEBUG         cursor:840  - Query result format: json
+2023-03-19 23:44:01,843 (85173/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:89   - Type: TEXT, Format: None
+2023-03-19 23:44:01,844 (85173/MainThread) snowflake.connector.result_batch DEBUG   result_batch:440  - parsing for result batch id: 1
+2023-03-19 23:44:01,844 (85173/MainThread) snowflake.connector.cursor INFO         cursor:854  - Number of results in first chunk: 1
+2023-03-19 23:44:01,844 (85173/MainThread) __main__ ERROR      eventloop:1255 - [Errno 2] No such file or directory: '*.sql'
+Traceback (most recent call last):
+  File "eventloop.py", line 1202, in cli
+  File "eventloop.py", line 1195, in cli
+  File "eventloop.py", line 680, in run_cli
+  File "eventloop.py", line 170, in __init__
+  File "codecs.py", line 905, in open
+FileNotFoundError: [Errno 2] No such file or directory: '*.sql'
+2023-03-19 23:44:01,847 (85173/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2023-03-19 23:44:01,847 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2023-03-19 23:44:01,847 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2023-03-19 23:44:01,847 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2023-03-19 23:44:01,848 (85173/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2023-03-19 23:44:01,848 (85173/MainThread) snowflake.connector.connection INFO     connection:565  - closed
+2023-03-19 23:44:01,848 (85173/MainThread) snowflake.connector.telemetry DEBUG      telemetry:209  - Closing telemetry client.
+2023-03-19 23:44:01,849 (85173/MainThread) snowflake.connector.telemetry DEBUG      telemetry:174  - Sending 1 logs to telemetry. Data is {'logs': [{'message': {'driver_type': 'PythonConnector', 'driver_version': '2.8.0', 'source': 'SnowSQL', 'type': 'client_imported_packages', 'value': "{'pyimod03_importers', 'math', 'os', 'quopri', 'typing', 'concurrent', 'configobj', 'tempfile', 'zlib', 'enum', 'stringprep', 'pygments', 'decimal', 'webbrowser', 'html', 'ssl', 'calendar', 'pkg_resources', 'fnmatch', 'argparse', 'fcntl', 'io', 'pprint', 'select', 'socket', 'traceback', 'posixpath', 'selectors', 'tty', 'Cryptodome', 'linecache', 'pathlib', 'pyexpat', 'http', 'oscrypto', 'cryptography', 'binascii', 'ctypes', 'charset_normalizer', 'gzip', 'types', 'shutil', 'jwt', 'reprlib', 'functools', 'cffi', 'posix', 'click', 'locale', 'multiprocessing', 'prompt_toolkit', 'pyimod02_archive', 'contextlib', 'shlex', 'atexit', 'bz2', 'errno', 'termios', 'pickle', 'unicodedata', 'keyrings', 'configparser', 'array', 'abc', 'datetime', 'lzma', 'builtins', 'zipimport', 'snowflake', 'tokenize', 'weakref', 'wcwidth', 'pycparser', 'OpenSSL', 'heapq', 'importlib', 'pkgutil', 'sys', 'email', 'keyring', 'inspect', 'mimetypes', 'csv', 'filelock', 'random', 'entrypoints', 'string', 'itertools', 'plistlib', 'grp', 'marshal', 'operator', 'pyimod01_os_path', 'sre_constants', 'signal', 'certifi', 'requests', 'collections', 'sre_compile', 'stat', 'asn1crypto', 'queue', 'gettext', 'pyimod04_ctypes', 'pytz', 'copyreg', 'base64', 'sysconfig', 'hashlib', 'typing_extensions', 'uu', 'warnings', 'logging', 'time', 'textwrap', 'struct', 'urllib', 'encodings', 'ntpath', 'six', 'glob', 'codecs', 'json', 'xml', 'copy', 'keyword', 'hmac', 'jaraco', 're', 'token', 'genericpath', 'zipfile', 'uuid', 'idna', 'dataclasses', 'urllib3', 'platform', 'opcode', 'pwd', 'difflib', 'numbers', 'threading', 'getpass', 'ipaddress', 'bisect', 'colorama', 'sre_parse', 'fractions', 'dis', 'runpy', 'sqlparse', 'subprocess', 'ast'}"}, 'timestamp': '1679269441693'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '2.8.0', 'source': 'SnowSQL', 'type': 'client_time_consume_first_result', 'query_id': '01ab0f70-0d04-4ee4-0000-00030e7658e5', 'value': -75}, 'timestamp': '1679269441842'}]}.
+2023-03-19 23:44:01,851 (85173/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:44:01,851 (85173/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 5, retry cnt: 1
+2023-03-19 23:44:01,851 (85173/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: bcc4b946-b4e9-4c31-a8f8-92bb6b2b4dc3
+2023-03-19 23:44:01,852 (85173/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:44:01,924 (85173/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=bcc4b946-b4e9-4c31-a8f8-92bb6b2b4dc3 HTTP/1.1" 200 86
+2023-03-19 23:44:01,925 (85173/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:44:01,926 (85173/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:44:01,926 (85173/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:44:01,926 (85173/MainThread) snowflake.connector.telemetry DEBUG      telemetry:198  - Successfully uploading metrics to telemetry.
+2023-03-19 23:44:01,927 (85173/MainThread) snowflake.connector.connection INFO     connection:568  - No async queries seem to be running, deleting session
+2023-03-19 23:44:01,927 (85173/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 1/1 active sessions
+2023-03-19 23:44:01,927 (85173/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 5, retry cnt: 1
+2023-03-19 23:44:01,928 (85173/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 152b2ebd-a64b-4ecd-9316-29d95f8207cb
+2023-03-19 23:44:01,928 (85173/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2023-03-19 23:44:02,200 (85173/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:456  - https://fi29557.east-us-2.azure.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=152b2ebd-a64b-4ecd-9316-29d95f8207cb HTTP/1.1" 200 76
+2023-03-19 23:44:02,202 (85173/MainThread) snowflake.connector.network DEBUG        network:1032 - SUCCESS
+2023-03-19 23:44:02,203 (85173/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'fi29557.east-us-2.azure.snowflakecomputing.com', SessionPool 0/1 active sessions
+2023-03-19 23:44:02,204 (85173/MainThread) snowflake.connector.network DEBUG        network:715  - ret[code] = None, after post request
+2023-03-19 23:44:02,208 (85173/MainThread) snowflake.connector.connection DEBUG     connection:579  - Session is closed

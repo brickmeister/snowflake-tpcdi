@@ -1,0 +1,228 @@
+2023-03-20 00:03:35,015 (7301/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:03:35,016 (7301/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/base_library.zip/certifi/cacert.pem
+2023-03-20 00:03:35,016 (7301/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/lib-dynload/certifi/cacert.pem
+2023-03-20 00:03:35,016 (7301/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/certifi/cacert.pem
+2023-03-20 00:03:35,017 (7301/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIRH1qa/certifi/cacert.pem
+2023-03-20 00:03:35,017 (7301/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:03:35,017 (7301/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:03:35,017 (7301/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:03:35,017 (7301/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:03:35,018 (7301/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:03:35,018 (7301/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:03:35,018 (7301/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:03:40,216 (7446/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:03:40,218 (7446/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/base_library.zip/certifi/cacert.pem
+2023-03-20 00:03:40,218 (7446/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/lib-dynload/certifi/cacert.pem
+2023-03-20 00:03:40,218 (7446/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/certifi/cacert.pem
+2023-03-20 00:03:40,218 (7446/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIxRV4uB/certifi/cacert.pem
+2023-03-20 00:03:40,219 (7446/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:03:40,219 (7446/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:03:40,219 (7446/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:03:40,219 (7446/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:03:40,220 (7446/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:03:40,220 (7446/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:03:40,220 (7446/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:03:45,188 (7593/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:03:45,190 (7593/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/base_library.zip/certifi/cacert.pem
+2023-03-20 00:03:45,190 (7593/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/lib-dynload/certifi/cacert.pem
+2023-03-20 00:03:45,191 (7593/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/certifi/cacert.pem
+2023-03-20 00:03:45,191 (7593/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIvpSChS/certifi/cacert.pem
+2023-03-20 00:03:45,191 (7593/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:03:45,191 (7593/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:03:45,191 (7593/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:03:45,192 (7593/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:03:45,192 (7593/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:03:45,192 (7593/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:03:45,192 (7593/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:03:50,047 (7742/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:03:50,048 (7742/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/base_library.zip/certifi/cacert.pem
+2023-03-20 00:03:50,049 (7742/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/lib-dynload/certifi/cacert.pem
+2023-03-20 00:03:50,049 (7742/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/certifi/cacert.pem
+2023-03-20 00:03:50,049 (7742/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIIK2O6p/certifi/cacert.pem
+2023-03-20 00:03:50,049 (7742/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:03:50,049 (7742/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:03:50,049 (7742/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:03:50,050 (7742/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:03:50,050 (7742/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:03:50,050 (7742/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:03:50,051 (7742/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:03:55,421 (7889/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:03:55,422 (7889/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/base_library.zip/certifi/cacert.pem
+2023-03-20 00:03:55,423 (7889/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/lib-dynload/certifi/cacert.pem
+2023-03-20 00:03:55,423 (7889/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/certifi/cacert.pem
+2023-03-20 00:03:55,423 (7889/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEII2uWJD/certifi/cacert.pem
+2023-03-20 00:03:55,423 (7889/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:03:55,423 (7889/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:03:55,423 (7889/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:03:55,424 (7889/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:03:55,424 (7889/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:03:55,424 (7889/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:03:55,425 (7889/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:00,835 (8054/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:00,837 (8054/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:00,837 (8054/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:00,837 (8054/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/certifi/cacert.pem
+2023-03-20 00:04:00,837 (8054/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEI081qv8/certifi/cacert.pem
+2023-03-20 00:04:00,837 (8054/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:00,837 (8054/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:00,837 (8054/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:00,838 (8054/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:00,838 (8054/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:00,838 (8054/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:00,839 (8054/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:06,107 (8211/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:06,108 (8211/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:06,108 (8211/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:06,108 (8211/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/certifi/cacert.pem
+2023-03-20 00:04:06,109 (8211/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIVWhfWX/certifi/cacert.pem
+2023-03-20 00:04:06,109 (8211/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:06,109 (8211/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:06,109 (8211/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:06,109 (8211/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:06,110 (8211/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:06,110 (8211/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:06,110 (8211/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:11,347 (8362/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:11,348 (8362/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:11,348 (8362/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:11,348 (8362/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/certifi/cacert.pem
+2023-03-20 00:04:11,349 (8362/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIua97c2/certifi/cacert.pem
+2023-03-20 00:04:11,349 (8362/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:11,349 (8362/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:11,349 (8362/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:11,349 (8362/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:11,350 (8362/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:11,350 (8362/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:11,350 (8362/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:16,715 (8515/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:16,717 (8515/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:16,717 (8515/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:16,717 (8515/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/certifi/cacert.pem
+2023-03-20 00:04:16,718 (8515/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILKnHsf/certifi/cacert.pem
+2023-03-20 00:04:16,718 (8515/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:16,718 (8515/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:16,718 (8515/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:16,719 (8515/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:16,719 (8515/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:16,719 (8515/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:16,720 (8515/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:21,871 (8667/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:21,873 (8667/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:21,873 (8667/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:21,873 (8667/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/certifi/cacert.pem
+2023-03-20 00:04:21,873 (8667/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIlEq7FX/certifi/cacert.pem
+2023-03-20 00:04:21,873 (8667/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:21,873 (8667/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:21,874 (8667/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:21,874 (8667/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:21,875 (8667/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:21,875 (8667/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:21,875 (8667/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:27,000 (8818/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:27,002 (8818/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:27,002 (8818/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:27,002 (8818/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/certifi/cacert.pem
+2023-03-20 00:04:27,002 (8818/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIDmTj1z/certifi/cacert.pem
+2023-03-20 00:04:27,003 (8818/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:27,003 (8818/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:27,003 (8818/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:27,003 (8818/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:27,004 (8818/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:27,004 (8818/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:27,004 (8818/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:31,834 (8966/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:31,835 (8966/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:31,836 (8966/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:31,836 (8966/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/certifi/cacert.pem
+2023-03-20 00:04:31,836 (8966/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXhM5kC/certifi/cacert.pem
+2023-03-20 00:04:31,836 (8966/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:31,836 (8966/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:31,836 (8966/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:31,837 (8966/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:31,837 (8966/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:31,837 (8966/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:31,837 (8966/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:36,720 (9106/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:36,721 (9106/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:36,722 (9106/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:36,722 (9106/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/certifi/cacert.pem
+2023-03-20 00:04:36,722 (9106/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIiVm76Q/certifi/cacert.pem
+2023-03-20 00:04:36,722 (9106/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:36,722 (9106/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:36,722 (9106/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:36,723 (9106/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:36,723 (9106/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:36,723 (9106/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:36,723 (9106/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:42,015 (9252/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:42,016 (9252/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:42,017 (9252/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:42,017 (9252/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/certifi/cacert.pem
+2023-03-20 00:04:42,017 (9252/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIFIwzfj/certifi/cacert.pem
+2023-03-20 00:04:42,017 (9252/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:42,017 (9252/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:42,017 (9252/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:42,018 (9252/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:42,018 (9252/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:42,018 (9252/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:42,018 (9252/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:47,489 (9409/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:47,491 (9409/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:47,491 (9409/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:47,491 (9409/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/certifi/cacert.pem
+2023-03-20 00:04:47,491 (9409/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIE2uqkn/certifi/cacert.pem
+2023-03-20 00:04:47,492 (9409/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:47,492 (9409/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:47,492 (9409/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:47,492 (9409/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:47,493 (9409/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:47,493 (9409/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:47,493 (9409/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:52,866 (9563/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:52,867 (9563/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:52,868 (9563/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:52,868 (9563/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/certifi/cacert.pem
+2023-03-20 00:04:52,868 (9563/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIzBy3cO/certifi/cacert.pem
+2023-03-20 00:04:52,868 (9563/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:52,868 (9563/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:52,868 (9563/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:52,869 (9563/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:52,869 (9563/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:52,869 (9563/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:52,870 (9563/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:04:58,626 (9725/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:04:58,627 (9725/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/base_library.zip/certifi/cacert.pem
+2023-03-20 00:04:58,627 (9725/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/lib-dynload/certifi/cacert.pem
+2023-03-20 00:04:58,628 (9725/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/certifi/cacert.pem
+2023-03-20 00:04:58,628 (9725/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIUOfUbk/certifi/cacert.pem
+2023-03-20 00:04:58,628 (9725/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:04:58,628 (9725/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:04:58,628 (9725/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:04:58,628 (9725/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:04:58,629 (9725/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:04:58,629 (9725/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:04:58,629 (9725/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:05:04,090 (9875/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:05:04,091 (9875/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/base_library.zip/certifi/cacert.pem
+2023-03-20 00:05:04,091 (9875/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/lib-dynload/certifi/cacert.pem
+2023-03-20 00:05:04,091 (9875/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/certifi/cacert.pem
+2023-03-20 00:05:04,092 (9875/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEILW90HM/certifi/cacert.pem
+2023-03-20 00:05:04,092 (9875/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:05:04,092 (9875/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:05:04,092 (9875/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:05:04,092 (9875/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:05:04,093 (9875/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:05:04,093 (9875/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:05:04,093 (9875/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
+2023-03-20 00:05:09,639 (10032/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file './snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2023-03-20 00:05:09,641 (10032/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/base_library.zip/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/base_library.zip/certifi/cacert.pem
+2023-03-20 00:05:09,641 (10032/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/lib-dynload/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/lib-dynload/certifi/cacert.pem
+2023-03-20 00:05:09,642 (10032/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/cacert.pem, /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/certifi/cacert.pem
+2023-03-20 00:05:09,642 (10032/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: /var/folders/94/_5czc1mn6cz2scfnd_7y6_6w0000gp/T/_MEIXT6U5a/certifi/cacert.pem
+2023-03-20 00:05:09,642 (10032/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2023-03-20 00:05:09,642 (10032/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2023-03-20 00:05:09,642 (10032/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2023-03-20 00:05:09,643 (10032/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2023-03-20 00:05:09,643 (10032/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2023-03-20 00:05:09,644 (10032/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2023-03-20 00:05:09,644 (10032/MainThread) __main__ DEBUG      bootstrap:828  - Running /Users/franco.patano/.snowsql/1.2.24/snowsql
