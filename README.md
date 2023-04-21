@@ -15,3 +15,4 @@ snowpark directory has some scripts to copy the files to the stage in snowflake
 
 plan is to build out snowpark code for the etl.  
 
+Full warning, running this in snowflake will cause the warehouses to boot and stay on, regardless if it's processed the data. There is a bug in one of the procedures, and I accidentally left this thing on for a week and I came back to a 8k bill. Be careful. 
