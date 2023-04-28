@@ -12,7 +12,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RESET_ALL_SP()
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.CASHTRANSACTION_STG"} ); rs = stmt.execute();
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.CUSTOMER_MGMT_STG"} ); rs = stmt.execute();
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.CUSTOMER_STG"} ); rs = stmt.execute();
-  stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.CUSTOMER_TEST_STG"} ); rs = stmt.execute();
+  //stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.CUSTOMER_TEST_STG"} ); rs = stmt.execute();
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.DAILYMARKET_STG"} ); rs = stmt.execute();
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.DATE_STG"} ); rs = stmt.execute();
   stmt = snowflake.createStatement({sqlText: "TRUNCATE TABLE TPCDI_STG.PUBLIC.FINWIRE_STG"} ); rs = stmt.execute();

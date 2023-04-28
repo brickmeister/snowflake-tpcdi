@@ -5,7 +5,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_HISTORICAL_SP(scale float)
   $$
   // Purpose: from a completed run state, reset all objects, run only the historical file loads and transformation tasks
   // tpcdi_scale is an input variable that represents the TPC-DI data size; 5,10,100,1000 are possible values
-  var tpcdi_scale = SCALE
+  var tpcdi_scale = SCALE;
   // Call the proc that truncates/resets all objects in the demo
   var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_WH.PUBLIC.RESET_ALL_SP()"});
   stmt.execute();
