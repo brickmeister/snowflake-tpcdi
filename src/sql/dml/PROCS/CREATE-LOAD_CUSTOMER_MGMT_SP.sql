@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_CUSTOMER_MGMT_SP(scale float)
   var tpcdi_scale = SCALE
   // Load CUSTOMER_MGMT_STG
   stmt = snowflake.createStatement(
-      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.CUSTOMER_MGMT_STG FROM @TPCDI_FILES/tpcdi-" + tpcdi_scale + "/Batch1/CustomerMgmt FILE_FORMAT = (FORMAT_NAME = 'XML') ON_ERROR=CONTINUE"}
+      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.CUSTOMER_MGMT_STG FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch1/CustomerMgmt FILE_FORMAT = (FORMAT_NAME = 'XML') ON_ERROR=CONTINUE ON_ERROR = SKIP_FILE"}
     );
   rs = stmt.execute();
   rs.next();

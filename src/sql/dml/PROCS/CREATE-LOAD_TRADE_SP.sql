@@ -10,7 +10,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_TRADE_SP(files float,wait floa
 	hist_stmt.execute();
 	// Load trade history
 	var hist2_stmt = snowflake.createStatement(
-		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADEHISTORY_STG 		FROM @TPCDI_FILES/load/trade_history/TradeHistory01.txt 		FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE')"}
+		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADEHISTORY_STG 		FROM @TPCDI_FILES/load/trade_history/TradeHistory01.txt 		FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
 		);
 	hist2_stmt.execute();	
 	// Insert wait here
@@ -21,7 +21,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_TRADE_SP(files float,wait floa
 	while (file_counter <= FILES)
 	{
 		var incrm_stmt = snowflake.createStatement(
-			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADE_STG FROM @TPCDI_FILES/load/trade/ FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') PATTERN='.*0" + file_counter + ".txt'"}
+			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADE_STG FROM @TPCDI_FILES/load/trade/ FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') PATTERN='.*0" + file_counter + ".txt' ON_ERROR = SKIP_FILE"}
 			);
 		incrm_stmt.execute();
 		// insert wait here

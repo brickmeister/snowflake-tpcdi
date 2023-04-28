@@ -9,7 +9,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_DAILYMARKET_I_SP(scale float,b
 	while (batch_counter <= BATCHES)	
 	{
 		var incrm_stmt = snowflake.createStatement(
-			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.DAILYMARKET_STG FROM @TPCDI_FILES/tpcdi-" + tpcdi_scale + "/Batch" + batch_counter + "/DailyMarket FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE')"}
+			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.DAILYMARKET_STG FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch" + batch_counter + "/DailyMarket FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
 			);
 		incrm_stmt.execute();
 		// insert wait here

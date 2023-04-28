@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_CASHTRANSACTION_H_SP(scale flo
 	var tpcdi_scale = SCALE
 	// Load historical file
 	var hist_stmt = snowflake.createStatement(
-		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.CASHTRANSACTION_STG(CT_CA_ID,CT_DTS,CT_AMT,CT_NAME) FROM (SELECT $1 $3 	,$2 $4 	,$3 $5 	,$4 $6 FROM @TPCDI_FILES/tpcdi-" + tpcdi_scale + "/Batch1/CashTransaction) FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE')"}
+		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.CASHTRANSACTION_STG(CT_CA_ID,CT_DTS,CT_AMT,CT_NAME) FROM (SELECT $1 $3 	,$2 $4 	,$3 $5 	,$4 $6 FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch1/CashTransaction) FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
 		);
 	hist_stmt.execute();
 	// Stop task

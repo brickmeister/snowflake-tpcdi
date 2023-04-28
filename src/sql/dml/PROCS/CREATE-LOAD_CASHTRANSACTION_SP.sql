@@ -16,7 +16,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_CASHTRANSACTION_SP(files float
 	while (file_counter <= FILES)
 	{
 		var incrm_stmt = snowflake.createStatement(
-			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.CASHTRANSACTION_STG FROM @TPCDI_FILES/load/cash_transaction/ FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') PATTERN='.*0" + file_counter + ".txt'"}
+			{sqlText: "COPY INTO TPCDI_STG.PUBLIC.CASHTRANSACTION_STG FROM @TPCDI_FILES/load/cash_transaction/ FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') PATTERN='.*0" + file_counter + ".txt' ON_ERROR = SKIP_FILE"}
 			);
 		incrm_stmt.execute();
 		// insert wait here

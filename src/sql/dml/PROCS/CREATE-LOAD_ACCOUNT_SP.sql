@@ -9,7 +9,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_ACCOUNT_SP(scale float,batches
   while (batch_counter <= BATCHES)
   {
     var incrm_stmt = snowflake.createStatement(
-      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.ACCOUNT_STG FROM @TPCDI_FILES/tpcdi-" + tpcdi_scale + "/Batch" + batch_counter + "/Account FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE')"}
+      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.ACCOUNT_STG FROM @TPCDI_FILES/tmp/tpcdi/sf=" + tpcdi_scale + "/Batch" + batch_counter + "/Account FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
       );
     incrm_stmt.execute();
     // insert wait here
