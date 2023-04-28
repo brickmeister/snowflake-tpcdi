@@ -9,7 +9,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_PROSPECT_SP(scale float,files 
   while (file_counter <= FILES)
   {
     var incrm_stmt = snowflake.createStatement(
-      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.PROSPECT_STG FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch" + file_counter + "/Prospect FILE_FORMAT = (FORMAT_NAME = 'TXT_CSV') ON_ERROR = SKIP_FILE"}
+      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.PROSPECT_STG FROM @TPCDI_FILES/tmp/tpcdi/sf=" + tpcdi_scale + "/Batch" + file_counter + "/Prospect FILE_FORMAT = (FORMAT_NAME = 'TXT_CSV') ON_ERROR = SKIP_FILE"}
       );
     incrm_stmt.execute();
     // insert wait here

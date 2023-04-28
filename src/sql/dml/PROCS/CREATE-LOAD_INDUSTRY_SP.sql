@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_INDUSTRY_SP(scale float)
   var tpcdi_scale = SCALE
   // Load INDUSTRY_STG
   stmt = snowflake.createStatement(
-      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.INDUSTRY_STG FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch1/Industry.txt FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
+      {sqlText: "COPY INTO TPCDI_STG.PUBLIC.INDUSTRY_STG FROM @TPCDI_FILES/tmp/tpcdi/sf=" + tpcdi_scale + "/Batch1/Industry.txt FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
     );
   rs = stmt.execute();
   rs.next();

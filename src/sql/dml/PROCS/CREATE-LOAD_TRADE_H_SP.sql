@@ -11,7 +11,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_STG.PUBLIC.LOAD_TRADE_H_SP(scale float)
 	hist_stmt.execute();
 	// Load trade history
 	var hist2_stmt = snowflake.createStatement(
-		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADEHISTORY_STG FROM @TPCDI_FILES//tpcdi/sf=" + tpcdi_scale + "/Batch1/TradeHistory FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
+		{sqlText: "COPY INTO TPCDI_STG.PUBLIC.TRADEHISTORY_STG FROM @TPCDI_FILES/tmp/tpcdi/sf=" + tpcdi_scale + "/Batch1/TradeHistory FILE_FORMAT = (FORMAT_NAME = 'TXT_PIPE') ON_ERROR = SKIP_FILE"}
 		);
 	hist2_stmt.execute();	
 	// Stop task
