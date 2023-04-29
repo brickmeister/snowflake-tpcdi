@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   // Purpose: this procedure is now defunct
   // Start LOAD_SNAPSHOT Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK "}
     );
   rs = stmt.execute();
   // Wait 10 Seconds
@@ -14,37 +14,37 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start DIM_DATE_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_DATE_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_DATE_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
  // Start DIM_TIME_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_TIME_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_TIME_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Start DIM_TRADE_TYPE_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_TRADE_TYPE_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_TRADE_TYPE_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Start DIM_STATUS_TYPE_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_STATUS_TYPE_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_STATUS_TYPE_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Start DIM_TAX_RATE_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_TAX_RATE_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_TAX_RATE_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Start DIM_INDUSTRY_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_INDUSTRY_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_INDUSTRY_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Start DIM_BROKER_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_BROKER_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_BROKER_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Wait 30 Seconds
@@ -52,7 +52,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start DIM_CUSTOMER_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Wait 30 Seconds
@@ -60,7 +60,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start DIM_ACCOUNT_HISTORICAL Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_HISTORICAL_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
   // Wait 60 Seconds
@@ -68,7 +68,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start DIM_CUSTOMER Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_TSK "}
     );
   rs = stmt.execute();
   // Wait 10 Seconds
@@ -76,7 +76,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start DIM_ACCOUNT Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_TSK "}
     );
   rs = stmt.execute();
   // Wait 10 Seconds
@@ -84,7 +84,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   rs = stmt.execute();
   // Start FACT_PROSPECT Task
   stmt = snowflake.createStatement(
-      {sqlText: "ALTER TASK TPCDI_WH.PUBLIC.FACT_PROSPECT_TSK RESUME"}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_PROSPECT_TSK "}
     );
   rs = stmt.execute();
   rs.next();

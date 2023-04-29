@@ -13,7 +13,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_HISTORICAL_SP(scale float)
   var stmt = snowflake.createStatement({sqlText: "INSERT INTO TPCDI_WH.PUBLIC.CTRL_BATCH VALUES (TPCDI_WH.PUBLIC.CTRL_BATCH_SEQ.NEXTVAL,LOCALTIMESTAMP())"});
   stmt.execute();
   // Start the task that captures the total table row counts in the tpcdi_wh database every 10 seconds
-  var stmt = snowflake.createStatement({sqlText: "ALTER TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK RESUME"});
+  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK RESUME"});
   stmt.execute();
   // Start the task that loads historical files into the tpcdi_stg database
   var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_STG.PUBLIC.START_LOAD_HISTORICAL_TASKS_SP(" + tpcdi_scale + ")"});

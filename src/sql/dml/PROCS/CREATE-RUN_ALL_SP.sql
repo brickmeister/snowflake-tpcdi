@@ -13,7 +13,7 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_ALL_SP(scale float)
   var stmt = snowflake.createStatement({sqlText: "INSERT INTO TPCDI_WH.PUBLIC.CTRL_BATCH VALUES (TPCDI_WH.PUBLIC.CTRL_BATCH_SEQ.NEXTVAL,LOCALTIMESTAMP())"});
   stmt.execute();
   // Start the task that captures the total table row counts in the tpcdi_wh database every 10 seconds
-  var stmt = snowflake.createStatement({sqlText: "ALTER TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK RESUME"});
+  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.LOAD_SNAPSHOT_TSK "});
   stmt.execute();
   // Start the task that loads historical files into the tpcdi_stg database
   var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_STG.PUBLIC.START_LOAD_HISTORICAL_TASKS_SP(" + tpcdi_scale + ")"});
@@ -22,10 +22,10 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_ALL_SP(scale float)
   var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_WH.PUBLIC.START_DW_HISTORICAL_TASKS_SP()"});
   stmt.execute();
   // Start the tasks that loads incremental files into the tpcdi_stg database after the historical load finishes
-  var stmt = snowflake.createStatement({sqlText: "ALTER TASK TPCDI_WH.PUBLIC.INCREMENTAL_LOAD_" + tpcdi_scale + "_CTRL_TSK RESUME"});
+  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.INCREMENTAL_LOAD_" + tpcdi_scale + "_CTRL_TSK "});
   stmt.execute();
   // Start the tasks that will run the incremental load as incremental files are loaded into tpcdi_stg
-  var stmt = snowflake.createStatement({sqlText: "ALTER TASK TPCDI_WH.PUBLIC.INCREMENTAL_DW_" + tpcdi_scale + "_CTRL_TSK RESUME"});
+  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.INCREMENTAL_DW_" + tpcdi_scale + "_CTRL_TSK "});
   stmt.execute();
   return "All tables have been reset, all historical tasks are started, and incremental flow control is ready.";
   $$
