@@ -6,8 +6,6 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_DW_HISTORICAL_TASKS_SP()
   // Purpose:  all tasks associated with processing the historical data into the tpcdi_wh database
   var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_REFERENCE_HISTORICAL_TSK "});
   stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_BROKER_HISTORICAL_TSK "});
-  stmt.execute();
   var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_HISTORICAL_TSK "});
   stmt.execute();
   var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_COMPANY_HISTORICAL_TSK "});

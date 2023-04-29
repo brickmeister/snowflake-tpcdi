@@ -42,50 +42,22 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
       {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_INDUSTRY_HISTORICAL_TSK "}
     );
   rs = stmt.execute();
-  // Start DIM_BROKER_HISTORICAL Task
-  stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_BROKER_HISTORICAL_TSK "}
-    );
-  rs = stmt.execute();
   // Wait 30 Seconds
   stmt = snowflake.createStatement({sqlText:`call system$wait(30, 'SECONDS');`});
   rs = stmt.execute();
-  // Start DIM_CUSTOMER_HISTORICAL Task
-  stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_HISTORICAL_TSK "}
-    );
-  rs = stmt.execute();
   // Wait 30 Seconds
   stmt = snowflake.createStatement({sqlText:`call system$wait(30, 'SECONDS');`});
-  rs = stmt.execute();
-  // Start DIM_ACCOUNT_HISTORICAL Task
-  stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_HISTORICAL_TSK "}
-    );
   rs = stmt.execute();
   // Wait 60 Seconds
   stmt = snowflake.createStatement({sqlText:`call system$wait(60, 'SECONDS');`});
   rs = stmt.execute();
   // Start DIM_CUSTOMER Task
   stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_TSK "}
+      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_INCREMENTAL_TSK "}
     );
   rs = stmt.execute();
   // Wait 10 Seconds
   stmt = snowflake.createStatement({sqlText:`call system$wait(10, 'SECONDS');`});
-  rs = stmt.execute();
-  // Start DIM_ACCOUNT Task
-  stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_TSK "}
-    );
-  rs = stmt.execute();
-  // Wait 10 Seconds
-  stmt = snowflake.createStatement({sqlText:`call system$wait(10, 'SECONDS');`});
-  rs = stmt.execute();
-  // Start FACT_PROSPECT Task
-  stmt = snowflake.createStatement(
-      {sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_PROSPECT_TSK "}
-    );
   rs = stmt.execute();
   rs.next();
   output = rs.getColumnValue(1);
