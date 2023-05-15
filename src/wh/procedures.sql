@@ -885,9 +885,6 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_ALL_SP(scale float)
   // Purpose: from a completed run state, reset all objects, run the historical/incremental file loads and transformation tasks
   // tpcdi_scale is an input variable that represents the TPC-DI data size; 5,10,100,1000 are possible values
   var tpcdi_scale = SCALE
-  // Call the proc that truncates/resets all objects in the demo
-  var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_WH.PUBLIC.RESET_ALL_SP()"});
-  stmt.execute();
   // Write batch 1 into the ctrl_batch table
   var stmt = snowflake.createStatement({sqlText: "INSERT INTO TPCDI_WH.PUBLIC.CTRL_BATCH VALUES (TPCDI_WH.PUBLIC.CTRL_BATCH_SEQ.NEXTVAL,LOCALTIMESTAMP())"});
   stmt.execute();
@@ -901,10 +898,10 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.RUN_ALL_SP(scale float)
   var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_WH.PUBLIC.START_DW_HISTORICAL_TASKS_SP()"});
   stmt.execute();
   // Start the tasks that loads incremental files into the tpcdi_stg database after the historical load finishes
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.INCREMENTAL_LOAD_" + tpcdi_scale + "_CTRL_TSK "});
+  var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_STG.PUBLIC.START_LOAD_INCREMENTAL_TASKS_SP(" + tpcdi_scale + ")"});
   stmt.execute();
   // Start the tasks that will run the incremental load as incremental files are loaded into tpcdi_stg
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.INCREMENTAL_DW_" + tpcdi_scale + "_CTRL_TSK "});
+  var stmt = snowflake.createStatement({sqlText: "CALL TPCDI_WH.PUBLIC.START_DW_INCREMENTAL_TASKS_SP()"});
   stmt.execute();
   return "All tables have been reset, all historical tasks are started, and incremental flow control is ready.";
   $$;
@@ -946,33 +943,10 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_DW_HISTORICAL_TASKS_SP()
   // Purpose:  all tasks associated with processing the historical data into the tpcdi_wh database
   var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_REFERENCE_HISTORICAL_TSK "});
   stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_COMPANY_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_SECURITY_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_FINANCIAL_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.CHECK_STREAM_CTRL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_TRADE_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_CASH_BALANCES_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_MARKET_HISTORY_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_PROSPECT_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_HOLDINGS_HISTORICAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_WATCHES_HISTORICAL_TSK "});
-  stmt.execute();
   return "All historical DW tasks started.";
-  $$
-;CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_DW_INCREMENTAL_TASKS_SP()
+  $$;
+  
+  CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_DW_INCREMENTAL_TASKS_SP()
   returns string
   language javascript
   as
@@ -980,23 +954,9 @@ CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_DW_HISTORICAL_TASKS_SP()
   // Purpose:  all tasks associated with processing the incremental data into the tpcdi_wh database
   var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_CUSTOMER_INCREMENTAL_TSK "});
   stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_ACCOUNT_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.DIM_TRADE_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_CASH_BALANCES_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_MARKET_HISTORY_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_PROSPECT_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_HOLDINGS_INCREMENTAL_TSK "});
-  stmt.execute();
-  var stmt = snowflake.createStatement({sqlText: "EXECUTE TASK TPCDI_WH.PUBLIC.FACT_WATCHES_INCREMENTAL_TSK "});
-  stmt.execute();
   return "All incremental DW tasks started.";
-  $$
-;
+  $$;
+
 CREATE OR REPLACE PROCEDURE TPCDI_WH.PUBLIC.START_TASKS_SP()
   returns string
   language javascript
